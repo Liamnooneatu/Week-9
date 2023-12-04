@@ -12,7 +12,11 @@ public class Person {
                 this.Telephone="";
         }
 
-
+        public Person(String name, String address, String telephone) {
+                Name = name;
+                Address = address;
+                Telephone = telephone;
+        }
 
         public String getTelephone() {
                 return Telephone;
@@ -33,9 +37,6 @@ public class Person {
                 Name = name;
         }
 
-
-
-
         @Override
         public String toString() {
                 return "Person{" +
@@ -44,7 +45,4 @@ public class Person {
                         ", Telephone='" + Telephone + '\'' +
                         '}';
         }
-
-
-
 }
